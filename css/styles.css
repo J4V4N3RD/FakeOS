@@ -1,0 +1,295 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("../imgs/windows_95.jpg");
+  min-height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+button {
+  height: 5vh;
+  width: 10vw;
+}
+
+.menu {
+  width: 10vw;
+  height: 48.4vh;
+  position: fixed;
+  bottom: 0;
+  display: none;
+  flex-direction: row;
+}
+.menu__applications {
+  margin-top: 5vh;
+  height: 30vh;
+  width: 20vw;
+  display: none;
+  flex-direction: column;
+}
+.menu__photos {
+  display: none;
+  flex-direction: column;
+}
+.menu__games {
+  height: 25vh;
+  width: 20vw;
+  margin-top: 10vh;
+  display: none;
+  flex-direction: column;
+}
+.menu__main {
+  width: 20vw;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+}
+.menu--hidden {
+  display: flex;
+}
+.menu__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu__item > button {
+  font-size: 25px;
+}
+.menu__item > button:hover {
+  background-color: rgb(196, 195, 195);
+  border-style: inset;
+}
+.menu__item > img {
+  height: 30px;
+  width: 30px;
+}
+
+.screen {
+  height: 96vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.screen__display {
+  width: 50vw;
+  height: 50vh;
+  align-self: center;
+  background-color: lightgray;
+  border: 5px groove white;
+  position: absolute;
+  display: none;
+}
+.screen__display--hidden {
+  display: block;
+}
+.screen__display__title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 3vh;
+  background-color: blue;
+  color: white;
+}
+.screen__display__title__exit {
+  height: 3vh;
+  padding: 0.5px;
+  display: flex;
+  align-items: center;
+}
+.screen__display__title__exit > button {
+  width: 1.5vw;
+  height: 2vh;
+  padding: 0.5px;
+  margin: 1.5px;
+  border: 3px white groove;
+  font-weight: bolder;
+}
+.screen__display--topbar {
+  height: 3vh;
+}
+.screen__display--topbar > button {
+  height: 3vh;
+  width: 5vw;
+  border: none;
+  background-color: lightgray;
+}
+.screen__display--topbar > button:hover {
+  background-color: rgba(211, 211, 211, 0.184);
+  border: 3px white groove;
+}
+.screen__display__main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 40vw;
+  height: 40vh;
+  margin: 0 4vw 0 4vw;
+  border: 4px gray inset;
+  background-color: white;
+}
+.screen__display__main--notepad {
+  margin: 0.25vw;
+  width: 49.5vw;
+  height: 43vh;
+  resize: none;
+  color: black;
+}
+.screen__display__main--msn {
+  margin: 0.25vw;
+  width: 49.5vw;
+  height: 43vh;
+  display: flex;
+  background-color: rgba(163, 185, 245, 0.4705882353);
+  border-radius: 12px;
+}
+.screen__display__main--msn > article {
+  height: 38vh;
+  position: absolute;
+  top: 8vh;
+  right: 2vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.screen__display__main--msn > article card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(117, 179, 237, 0.5725490196);
+  border-radius: 12px;
+  padding: 10px;
+  font-weight: bold;
+  color: white;
+}
+.screen__display__main--msn > article card > img {
+  border-radius: 12px;
+}
+.screen__display__main--msn > div {
+  width: 35vw;
+  height: 25vh;
+  position: absolute;
+  top: 8vh;
+  left: 2vw;
+  background-color: white;
+  border-radius: 12px;
+}
+.screen__display__main--msn > textarea {
+  width: 35vw;
+  height: 13vh;
+  position: absolute;
+  bottom: 2vh;
+  left: 2vw;
+  resize: none;
+  border-radius: 12px;
+}
+.screen__display__main--msn > button {
+  height: 60px;
+  width: 70px;
+  position: absolute;
+  bottom: 8vh;
+  left: 32.8vw;
+  color: rgb(65, 185, 225);
+  font-weight: bolder;
+  background-color: #e9f1f7;
+  border: 2px outset lightblue;
+  border-radius: 12px;
+}
+.screen__display__main--msn > button:hover {
+  background-color: rgba(233, 241, 247, 0.6352941176);
+  color: black;
+}
+.screen__icon {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.screen__icon__card {
+  height: 10vh;
+  width: 5vw;
+  border: none;
+  background-color: transparent;
+  color: whitesmoke;
+}
+.screen__icon__card:hover {
+  border: 1px solid lightgray;
+  background-color: rgba(211, 211, 211, 0.184);
+}
+
+.notePad {
+  display: none;
+}
+.notePad--hidden {
+  display: block;
+}
+
+.files {
+  display: none;
+}
+.files__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100px;
+  width: 100px;
+  margin: 20px;
+}
+.files__card:hover {
+  background-color: rgba(173, 216, 230, 0.233);
+}
+.files__card > img {
+  height: 6vh;
+  width: 5vw;
+}
+.files--hidden {
+  display: block;
+}
+
+.bin {
+  display: none;
+}
+
+.msn {
+  display: none;
+}
+
+footer {
+  width: 99.7vw;
+  background-color: lightgray;
+  border-style: ridge;
+  border: white 2px solid;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+#start, #clock {
+  width: 5vw;
+  height: 3vh;
+  font-weight: bold;
+  font-size: 2vh;
+  border-top: black 3px solid;
+  border-style: inset;
+}
+#start:hover, #clock:hover {
+  border-style: inset;
+  border-right: white 3px solid;
+  border-bottom: white 3px solid;
+}
+
+#clock {
+  width: 6vw;
+  font-size: 1.2vh;
+  border-top: gray 3px solid;
+  border-left: gray 3px solid;
+  border-right: white 3px solid;
+  border-bottom: white 3px solid;
+}

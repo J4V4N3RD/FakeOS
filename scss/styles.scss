@@ -1,0 +1,304 @@
+$button-hover-color: rgba(211, 211, 211, 0.184);
+$button-border: 3px white groove;
+$button-height: 3vh;
+$button-width: 5vw;
+$menu-button-height: 5vh;
+$menu-button-width: 20vw;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-image: url("../imgs/windows_95.jpg");
+  min-height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+button {
+  height: 5vh;
+  width: 10vw;
+}
+
+.menu {
+  width: 10vw;
+  height: 48.4vh;
+  position: fixed;
+  bottom: 0;
+  display: none; //change back to flex
+  flex-direction: row;
+
+  &__applications {
+    margin-top: 5vh;
+    height: 30vh;
+    width: 20vw;
+    display: none;
+    flex-direction: column;
+  }
+  &__photos {
+    display: none;
+    flex-direction: column;
+  }
+  &__games {
+    height: 25vh;
+    width: 20vw;
+    margin-top: 10vh;
+    display: none;
+    flex-direction: column;
+  }
+  &__main {
+    width: 20vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+  }
+  &--hidden {
+    display: flex;
+  }
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & > button {
+      font-size: 25px;
+      &:hover {
+        background-color: rgb(196, 195, 195);
+        border-style: inset;
+      }
+    }
+    & > img {
+      height: 30px;
+      width: 30px;
+    }
+  }
+}
+
+.screen {
+  height: 96vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  &__display {
+    width: 50vw;
+    height: 50vh;
+    align-self: center;
+    background-color: lightgray;
+    border: 5px groove white;
+    position: absolute;
+    display: none;
+    &--hidden {
+      display: block;
+    }
+    &__title {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      height: 3vh;
+      background-color: blue;
+      color: white;
+      &__exit {
+        height: 3vh;
+        padding: 0.5px;
+        display: flex;
+        align-items: center;
+        & > button {
+          width: 1.5vw;
+          height: 2vh;
+          padding: 0.5px;
+          margin: 1.5px;
+          border: 3px white groove;
+          font-weight: bolder;
+        }
+      }
+    }
+    &--topbar {
+      height: 3vh;
+      & > button {
+        height: $button-height;
+        width: $button-width;
+        border: none;
+        background-color: lightgray;
+        &:hover {
+          background-color: $button-hover-color;
+          border: 3px white groove;
+        }
+      }
+    }
+    &__main {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 40vw;
+      height: 40vh;
+      margin: 0 4vw 0 4vw;
+      border: 4px gray inset;
+      background-color: white;
+      &--notepad {
+        margin: 0.25vw;
+        width: 49.5vw;
+        height: 43vh;
+        resize: none;
+        color: black;
+      }
+      &--msn {
+        margin: 0.25vw;
+        width: 49.5vw;
+        height: 43vh;
+        display: flex;
+        background-color: #a3b9f578;
+        border-radius: 12px;
+        & > article {
+          height: 38vh;
+          position: absolute;
+          top: 8vh;
+          right: 2vw;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          & card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #75b3ed92;
+            border-radius: 12px;
+            padding: 10px;
+            font-weight: bold;
+            color: white;
+            & > img {
+              border-radius: 12px;
+            }
+          }
+        }
+        & > div {
+          width: 35vw;
+          height: 25vh;
+          position: absolute;
+          top: 8vh;
+          left: 2vw;
+          background-color: white;
+          border-radius: 12px;
+        }
+        & > textarea {
+          width: 35vw;
+          height: 13vh;
+          position: absolute;
+          bottom: 2vh;
+          left: 2vw;
+          resize: none;
+          border-radius: 12px;
+        }
+        & > button {
+          height: 60px;
+          width: 70px;
+          position: absolute;
+          bottom: 8vh;
+          left: 32.8vw;
+          color: rgb(65, 185, 225);
+          font-weight: bolder;
+          background-color: #e9f1f7;
+          border: 2px outset lightblue;
+          border-radius: 12px;
+          &:hover {
+            background-color: #e9f1f7a2;
+            color: black;
+          }
+        }
+      }
+    }
+  }
+  &__icon {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    &__card {
+      height: 10vh;
+      width: 5vw;
+      border: none;
+      background-color: transparent;
+      color: whitesmoke;
+      &:hover {
+        border: 1px solid lightgray;
+        background-color: rgba(211, 211, 211, 0.184);
+      }
+    }
+  }
+}
+
+.notePad {
+  display: none; //change to none vis versa
+  &--hidden {
+    display: block;
+  }
+}
+.files {
+  display: none; //change to none vis versa
+  &__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100px;
+    width: 100px;
+    margin: 20px;
+    &:hover {
+      background-color: rgba(173, 216, 230, 0.233);
+    }
+    & > img {
+      height: 6vh;
+      width: 5vw;
+    }
+  }
+  &--hidden {
+    display: block;
+  }
+}
+.bin {
+  display: none;
+}
+
+.msn {
+  display: none; //change to none/block vis versa
+}
+
+// #bin {
+//   height: 7vh;
+//   width: 5vw;
+// }
+
+footer {
+  width: 99.7vw;
+  background-color: lightgray;
+  border-style: ridge;
+  border: white 2px solid;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+}
+#start {
+  width: 5vw;
+  height: 3vh;
+  font-weight: bold;
+  font-size: 2vh;
+  border-top: black 3px solid;
+  border-style: inset;
+  &:hover {
+    border-style: inset;
+    border-right: white 3px solid;
+    border-bottom: white 3px solid;
+  }
+}
+//replace with mixin
+#clock {
+  @extend #start;
+  width: 6vw;
+  font-size: 1.2vh;
+  border-top: gray 3px solid;
+  border-left: gray 3px solid;
+  border-right: white 3px solid;
+  border-bottom: white 3px solid;
+}

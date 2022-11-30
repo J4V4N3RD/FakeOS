@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Windows 95</title>
+    <!-- Icons -->
+    <script
+      src="https://kit.fontawesome.com/d4d2ef45ad.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Javascript -->
+    <script src="../Javascript/script.js" defer> </script>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body>
+    <main>
+      <div class="menu">
+
+      <div class="menu__main">
+        
+        <!-- Photos -->
+            <button class="menu__item" id="photos">
+            <i class="fa-solid fa-photo-film"></i>
+            Photos<i class="fa-solid fa-caret-right"></i></card>
+        </button>
+        
+        <!-- Applications -->
+            <button class="menu__item" id="applications">
+            <i class="fa-regular fa-folder-open"></i>
+            Applications<i class="fa-solid fa-caret-right"></i>
+        </button>
+        
+        <!-- Games -->
+        <button class="menu__item" id="games">
+            <i class="fa-solid fa-gamepad"></i>
+            Games<i class="fa-solid fa-caret-right"></i>
+        </button>
+
+        <!-- Calculator -->
+            <button class="menu__item" id="calculator">
+            <i class="fa-solid fa-calculator"></i>
+            Calculator
+        </button>
+        
+        <!-- Settings -->
+            <button class="menu__item" id="settings">
+            <i class="fa-solid fa-gears"></i>
+            Settings
+        </button>
+        
+        <!-- Find -->
+        <button class="menu__item" id="find">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            Find
+        </button>
+        
+        <!-- Help -->
+            <button class="menu__item" id="help">
+            <i class="fa-solid fa-clipboard-question"></i>
+            Help
+        </button>
+        
+        <!-- Log off -->
+        <button class="menu__item" id="log-off">
+            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+            Log off
+        </button>
+
+        <!-- Shutdown -->
+            <button class="menu__item" id="shutdown">
+        <i class="fa-solid fa-power-off"></i>
+        Shutdown
+        </button>
+
+        <!-- Main menu ends here -->
+        </div>
+
+        <!-- Applications Menu -->
+        <div class="menu__applications">
+
+        <button class="menu__item">
+            <i class="fa-solid fa-terminal"></i>
+            Terminal</button>
+
+        <button class="menu__item">
+            <img src="../imgs/notepad.png" alt="Note Pad">
+            Notepad</button>
+
+        <button class="menu__item">
+            <img src="https://www.vectorlogo.zone/logos/discordapp/discordapp-icon.svg" alt="Discord" height="20vh" width="20vw" >
+            Discord</button>
+
+        <button class="menu__item"><img src="https://www.vectorlogo.zone/logos/google_chrome/google_chrome-icon.svg" alt="google chrome" height="20vh" width="20vw" />
+            Chrome</button>
+             
+    <!-- Applications ends here -->
+    </div>
+
+    <!-- Photos menu -->
+    <!-- Add icons to menu items -->
+    <div class="menu__photos">
+
+        <!-- 21st Birthday Photos -->
+            <button class="menu__item">
+                <img src="../imgs/photoFolder.png" alt="21st Birthday Photos">
+                21st Birthday
+            </button>
+
+            <!-- Memes -->
+            <button class="menu__item">
+                <img src="../imgs/photoFolder.png" alt="Memes Collection">
+                Memes
+            </button>
+
+            <!-- Vanuatu -->
+            <button class="menu__item">
+                <img src="../imgs/photoFolder.png" alt="Vanuatu Holiday Photos">
+                Vanuatu
+            </button>
+
+        <!-- Photos ends here -->
+    </div>
+
+    <!-- Games menu starts here -->
+    <!-- Add icons to menu items -->
+    <div class="menu__games">
+
+        <button class="menu__item">
+        <img src="../imgs/solitaire.png" alt="Solitaire Game">
+        Solitaire
+        </button>
+
+        <button class="menu__item">
+            <img src="../imgs/mineSweeper.png" alt="Mine Sweeper Game">
+            Minesweeper
+        </button>
+            
+        <button class="menu__item">
+            <img src="../imgs/freeCell.png" alt="FreeCell Card Game">
+            FreeCell
+        </button>
+
+        <button class="menu__item">
+            <img src="../imgs/pinballArcade.png" alt="Pin Ball Arcade">
+            Pinball Arcade
+        </button>
+
+    <!-- Games menu ends here -->
+    </div>
+
+        <!-- Menu ends here -->
+        </div>
+
+        <!-- Screen start -->
+    <div class="screen">
+
+        <!-- Notepad Display -->
+        <div class="screen__display notePad" id="notePad" >
+
+            <!-- Icon, Title, Exit, min, max buttons -->
+            <div class="screen__display__title">
+           <img src="../imgs/notepad.png" alt="note pad" height="30vh" width="40vh"> <h3>Note Pad</h3>
+           <card class="screen__display__title__exit">
+           <button>_</button>
+           <button><i class="fa-regular fa-square"></i>
+        </button>
+        <button id="close--note">X</button>
+        </card>
+            </div>
+
+            <!-- Display Menu -->
+            <div class="screen__display--topbar">
+                <button>File</button>
+                <button>Edit</button>
+                <button>View</button>
+                <button>Help</button>
+            </div>
+
+            <!-- main display -->
+            <textarea class="screen__display__main--notepad" >//Start your note here
+            </textarea>
+
+            <!-- Note pad ends here -->
+    </div>
+
+    <!-- Important files display starts here -->
+    <div class="screen__display files" >
+
+            <!-- Icon, Title, Exit, min, max buttons -->
+            <div class="screen__display__title">
+                <img src="https://www.vectorlogo.zone/logos/filemaker/filemaker-icon.svg" alt="Important files" height="50vh">
+            <h3>Important files</h3>
+           <card class="screen__display__title__exit">
+           <button>_</button>
+           <button><i class="fa-regular fa-square"></i>
+        </button>
+        <button id="close--file">X</button>
+        </card>
+            </div>
+
+            <!-- Display Menu -->
+            <div class="screen__display--topbar">
+                <button>File</button>
+                <button>Edit</button>
+                <button>View</button>
+                <button>Help</button>
+            </div>
+
+            <!-- main display -->
+            <div class="screen__display__main">
+            <card class="files__card">
+            <img src="https://www.vectorlogo.zone/logos/filemaker/filemaker-icon.svg" alt="Important files"/>
+            <p>Nology</p>
+            </card>
+
+            <card class="files__card">
+            <img src="https://www.vectorlogo.zone/logos/filemaker/filemaker-icon.svg" alt="Important files"/>
+            <p>Identification</p>
+            </card>
+
+            <card class="files__card">
+            <img src="https://www.vectorlogo.zone/logos/filemaker/filemaker-icon.svg" alt="Important files"/>
+            <p>Projects</p>
+            </card>
+
+            <card class="files__card">
+            <img src="https://www.vectorlogo.zone/logos/filemaker/filemaker-icon.svg" alt="Important files"/>
+            <p>Legal advice</p>
+            </card>
+
+            <card class="files__card">
+            <img src="https://www.vectorlogo.zone/logos/filemaker/filemaker-icon.svg" alt="Important files"/>
+            <p>World Domination</p>
+            </card>
+
+            </div>
+
+
+            <!-- Important files ends here -->
+    </div>
+    
+    <div class="screen__display bin" >
+
+            <!-- Recycling Bin starts here -->
+            <!-- Icon, Title, Exit, min, max buttons -->
+            <div class="screen__display__title">
+           <img src="../imgs/bin.ico" alt="recycle bin" height="30vh" width="40vh"> <h3>Recycling Bin</h3>
+           <card class="screen__display__title__exit">
+           <button>_</button>
+           <button><i class="fa-regular fa-square"></i>
+        </button>
+        <button id="close--bin">X</button>
+        </card>
+            </div>
+
+            <!-- Display Menu -->
+            <div class="screen__display--topbar">
+                <button>File</button>
+                <button>Edit</button>
+                <button>View</button>
+                <button>Help</button>
+            </div>
+
+            <!-- main display -->
+            <div class="screen__display__main">
+               <card class="files__card">
+            <img src="https://www.vectorlogo.zone/logos/filemaker/filemaker-icon.svg" alt="Important files"/>
+            <p>Old Files</p>
+            </card>
+
+            <card class="files__card">
+            <img src="https://www.vectorlogo.zone/logos/filemaker/filemaker-icon.svg" alt="Important files"/>
+            <p>Temp Files</p>
+            </card>
+
+            <card class="files__card">
+            <img src="https://www.vectorlogo.zone/logos/filemaker/filemaker-icon.svg" alt="Important files"/>
+            <p>Test Projects</p>
+            </card>
+
+            <card class="files__card">
+            <img src="https://www.vectorlogo.zone/logos/filemaker/filemaker-icon.svg" alt="Important files"/>
+            <p>Travel Plans</p>
+            </card>
+
+            <card class="files__card">
+            <img src="https://www.vectorlogo.zone/logos/filemaker/filemaker-icon.svg" alt="Important files"/>
+            <p>Photos of Ex</p>
+            </card>
+            </div>
+               
+            <!-- recycling bin _modulo_ ends here -->
+        </div>
+
+
+        <!-- MSN Display -->
+        <div class="screen__display msn" >
+
+            <!-- Icon, Title, Exit, min, max buttons -->
+            <div class="screen__display__title">
+           <img src="../imgs/msn.png" alt="note pad" height="30vh" width="30vh">
+           
+           <h3>MSN Messenger - Conversation User123</h3>
+           <card class="screen__display__title__exit">
+           <button>_</button>
+           <button><i class="fa-regular fa-square"></i>
+        </button>
+        <button id="close--msn">X</button>
+        </card>
+            </div>
+
+            <!-- Display Menu -->
+            <div class="screen__display--topbar">
+                <button>File</button>
+                <button>Edit</button>
+                <button>Actions</button>
+                <button>Tools</button>
+                <button>Help</button>
+            </div>
+
+            <!-- main display -->
+            <div class="screen__display__main--msn">
+                <!-- Users -->
+                <article class="users">
+                    <!-- First User -->
+                    <card>
+                <img src="https://www.placecage.com/c/90/110">
+                <p>User123</p>
+                </card>
+
+                <!-- Second user -->
+                <card>
+                <img src="https://www.placecage.com/c/60/80">
+                <p>Crazy_Chicken23</p>
+                </card>
+                </article>
+
+                <!-- Receive message -->
+                <div id="messageArea"></div>
+
+                <!-- Send Message -->
+            <textarea id="messageTxt">
+              
+            </textarea>
+
+            <!-- Send Button -->
+            <button type="submit" class="submit">Send</button>
+
+            </div>
+            <!-- MSN ends here -->
+    </div>
+
+
+
+        <!-- Icons -->
+        
+        <!-- Recycling Bin -->
+        <div class="screen__icon">
+
+        <button class="screen__icon__card" id="bin">
+        <img src="../imgs/bin.ico" alt="recycle bin" height="80vh" width="80vw"/>
+            <h4>Recycle Bin</h4>
+        </button>
+
+        <!-- MSN -->
+        <button class="screen__icon__card" id="msn">
+        <img src="../imgs/msn.png" alt="msn" height="80vh" width="80vw" >
+        <h4>MSN</h4>
+        </button>
+
+        <!-- Important files -->
+        <button class="screen__icon__card" id="files">
+        <img src="https://www.vectorlogo.zone/logos/filemaker/filemaker-icon.svg" alt="Important files"  >
+            <h4>Important files</h4>
+        </button>
+
+        <!-- NotePad -->
+        <button class="screen__icon__card" id="note">
+        <img src="../imgs/notepad.png" alt="NotePad height="80vh" width="80vw" >
+            <h4>Note Pad</h4>
+        </button>
+
+        <!-- Icons ends here -->
+        </div>
+
+        
+
+            <!-- Screen ends here -->
+        </div>
+
+
+        <!-- Start Bar -->
+      <footer>
+        <button id="start">
+            <img src="https://www.vectorlogo.zone/logos/microsoft/microsoft-icon.svg" alt="microsoft" height="15vh" width="15vw">
+            Start
+        </button>
+
+        <!-- Clock -->
+        <button id="clock"></button>
+        <script src="../Javascript/clock.js"></script>
+      </footer>
+    </main>
+  </body>
+</html>
