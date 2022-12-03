@@ -237,6 +237,7 @@ const menuToggle = (menuName1, menuName2, menuName3) => {
 };
 
 //icon event listener function
+//for each array in a function
 const iconToggle = (icon1, icon2, icon3, icon4) => {
   if (icon1.style.border === $iconBorder) {
     icon2.style.border = "none";

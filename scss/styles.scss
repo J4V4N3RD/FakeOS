@@ -264,11 +264,6 @@ button {
   display: none; //change to none/block vis versa
 }
 
-// #bin {
-//   height: 7vh;
-//   width: 5vw;
-// }
-
 footer {
   width: 99.7vw;
   background-color: lightgray;
@@ -295,7 +290,7 @@ footer {
 //replace with mixin
 #clock {
   @extend #start;
-  width: 6vw;
+  width: 10vw;
   font-size: 1.2vh;
   border-top: gray 3px solid;
   border-left: gray 3px solid;
